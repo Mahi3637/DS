@@ -36,5 +36,5 @@ public class Rotate {
             }
             System.out.println(" ");
         }
-    }
+    }    
 }
