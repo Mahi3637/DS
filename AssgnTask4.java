@@ -7,12 +7,23 @@ class AssgnTask4{
     //if extra helper methods are used then you must submit those as well
     public static void rotateSecret( Character[][] board ){
 
-        //Print the message inside of this method
-        //TO DO
-
         int row = board.length;
         int col = board[0].length;
         int layer = row/2;
+        int rot = layer + 1;
+
+        for(int i = 0; i<row; i++){
+            for(int j= 0; j<col; j++){
+
+             for(int k = 0; k<layer; k++){
+                char temp = board[i][j];
+                board[i][j] = board[i][j-1];
+                board[i][j-1] = board[i][j+1];
+                board[i][j+1] = temp;
+             }
+
+            }
+        }
 
     }
 

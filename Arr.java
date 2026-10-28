@@ -1,24 +1,5 @@
-//DO NOT TOUCH THIS CODE
 class Arr{
     
-    // HELPER METHOD TO COMPARE 2D ARRAY
-    public static boolean compare2D(Object[][] arr1, Object[][] arr2) {
-        if( arr1==null || arr2==null ) return false;
-        
-        int row1 = arr1.length, col1 = arr1[0].length;
-        int row2 = arr2.length, col2 = arr1[0].length;
-        if( row1!=row2 && col1!=col2 ) return false;
-
-        for (int r=0; r<row1; r++) {
-            for (int c=0; c<col1; c++) {
-                if( ! arr1[r][c].equals(arr2[r][c]) ) return false;
-            }
-        }
-
-        return true;
-    }
-
-
     // HELPER METHOD TO PRINT 2D ARRAY
     public static void print2D(Object[][] arr) {
         if( arr!=null ){
