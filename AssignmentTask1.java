@@ -17,22 +17,27 @@ public class AssignmentTask1 {
 
         while (current1.next != null) {
             count1++;
+            current1 = current1.next;
         }
 
-        while (current1.next != null) {
+        while (current2.next != null) {
             count2++;
+            current2 = current2.next;
         }
 
         if(count1 == count2){
-            while(current1.next != null && current2.next != null){
-                if(current1.elem == current2.elem){
+            while(current1 != null && current2 != null){
+                if(current1.elem.equals(current2.elem)){
                     return "similar";
                 }
+                current1 = current1.next;
+                current2 = current2.next;
             }
         }
+        return "Not similar";
 
         // Once you're ready to return the String delete the following line
-        return null;
+        
     }
 
     // NOTE: if you find any issue with the driver code please inform AIB

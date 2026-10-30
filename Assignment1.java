@@ -2,6 +2,7 @@
 class Node {
     String color;
     Node next;
+    public Object elem;
     
     Node(String color) {
         this.color = color;

@@ -9,6 +9,24 @@ public class AssignmentTask4{
         //      into int or Integer like the following:
         //        (int)n.elem  or  (Integer)n.elem
 
+        Node curr1 = head1;
+        Node curr2 = head2;
+        Node curr3 = head3;
+
+        while(curr1 != null){
+            Node prevNode = null;
+            Node nextNode = curr1.next;
+            curr1.next = prevNode;
+            prevNode = curr1;
+            curr1 = nextNode;
+        }
+
+
+            curr1 = curr1.next;
+            curr2 = curr2.next;
+            curr3 = curr3.next;
+        
+
         return null; // Remove this when you're ready to return the new head
     }
 

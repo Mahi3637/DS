@@ -7,6 +7,38 @@ public class AssignmentTask2{
         
         //TO DO
 
+        if (head == null || head.next == null){
+            return head;
+        }
+
+        int count = 0;
+        Node curr = head;
+
+        while(curr != null){
+            count++;
+            curr = curr.next;
+        }
+
+        for(int i = 0; i < count-1; i++){
+            for(int j = 0; j < count - i - 1; j++){
+                Node current = head;
+                for(int k=0; k<j; k++){
+                    current  = current.next;
+                }
+
+                    if(popularity[j] < popularity[j+1]){
+                        int tempRank = popularity[j];
+                        popularity[j] = popularity[j+1];
+                        popularity[j+1] = tempRank;
+
+                        Object currElem = current.elem;
+                        current.elem = current.next.elem;
+                        current.next.elem = currElem;   
+                    }
+                }
+            }
+        
+
         return null; // Remove this when you're ready to return the new head
     }
 
