@@ -8,6 +8,10 @@ class Node {
         this.color = color;
         this.next = null;
     }
+
+    public Node(int sum) {
+        //TODO Auto-generated constructor stub
+    }
 }
 
 // LinkedList class with helper methods
