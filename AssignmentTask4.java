@@ -3,11 +3,6 @@ public class AssignmentTask4{
     
     // MUST SUBMIT this method
     public static Node idGenerator(Node head1, Node head2, Node head3) {
-        
-        //TO DO
-        //Hint: the Node elements are actually Object, you can type cast them
-        //      into int or Integer like the following:
-        //        (int)n.elem  or  (Integer)n.elem
 
         Node curr1 = head1;
         Node curr2 = head2;
@@ -25,9 +20,6 @@ public class AssignmentTask4{
             curr1 = curr1.next;
             curr2 = curr2.next;
             curr3 = curr3.next;
-        
-
-        return null; // Remove this when you're ready to return the new head
     }
 
     //NOTE: if you find any issue with the driver code please inform AIB

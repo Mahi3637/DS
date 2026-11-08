@@ -2,7 +2,7 @@ public class AssignmentTask6 {
 
     //SUBMIT ONLY THIS METHOD
     public static void pairJoin(DNode dh1, DNode dh2) {
-        // TO DO
+        
         if(dh1.next == null || dh2.next == null){
             System.out.println("Nothing to show as a list");
             return;

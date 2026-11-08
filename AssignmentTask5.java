@@ -2,7 +2,7 @@ public class AssignmentTask5 {
 
     //SUBMIT ONLY THIS METHOD
     public static void sumOddAppend(Node dh) {
-        // TO DO
+        
         if(dh == null || dh.next == null){
             System.out.println("No list");
         }
