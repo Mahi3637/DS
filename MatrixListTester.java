@@ -27,19 +27,50 @@ public class MatrixListTester {
 
         for(int i = 0; i < row; i++){
             for(int j = 0; j < col; j++){
-                 int temp = M[i][j];
 
-                 if(temp > 0){
-                    BNode Node = new BNode(temp, row, col);
+                 int val = M[i][j];
+
+                 if(val > 0){
+                    BNode Head1 = null;
+                    BNode Tail1 = null;
+                    BNode Head2 = null;
+                    BNode Tail2 = null;
+
+                    BNode Node = new BNode(val, i, j);
                     BNode curr = dh;
-                    BNode current = 
-                 }
+                    BNode current = dh.next;
+
+                    if(((val) + (i+j)) > threshold){
+                        if(Head1 == null){
+                            Head1 = Node;
+                            Tail1 = Node;
+                        }
+                        else{
+                            Tail1.next = Node;
+                            Tail1 = Node;
+                        }
+                    
+
+                }
+                else{
+                    if(Head2 == null){
+                        Head2 =Node;
+                        Tail2 = Node;
+                    }
+                    else{
+                        Tail2.next = Node;
+                        Tail2 = Node;
+                    }
+                }
             }
         }
+    }
+   
 
 
         return dh;
     }
+
 
     public static void main(String[] args) {
         // Sample test case setup based on the lab sheet[cite: 5, 6]:
