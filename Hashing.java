@@ -23,5 +23,5 @@ public class Hashing{
          while(it.hasNext()){
            System.out.print(it.next());
          }
-    }
+    }  
 }
