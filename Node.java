@@ -15,13 +15,14 @@
 //     }
 // }
 
-//DO NOT MODIFY ANY CODE IN THIS CLASS
+//DO NOT CHANGE THIS CLASS
+package LabTask1;
 public class Node {
-    public Object elem;
-    public Node next;
-
-    public Node(Object elem) {
+    int elem;
+    Node next;
+    //DO NOT CHANGE THIS CONSTRUCTOR
+    public Node(int elem, Node next) {
         this.elem = elem;
-        this.next = null;
+        this.next = next;
     }
 }
