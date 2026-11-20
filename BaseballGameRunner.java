@@ -1,3 +1,5 @@
+//STACK PRACTISE FOR MID
+
 class Stack {
     private static class Node {
         private int data;
