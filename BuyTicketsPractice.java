@@ -23,6 +23,40 @@ public class BuyTicketsPractice {
             //   2. Decrement that person's remaining tickets.
             //   3. If it's person k and they now have 0 tickets left, return the elapsed time.
             //   4. Otherwise, if they still have tickets left (> 0), offer their index back to the queue.
+
+            if(tickets.length == 0){
+                return 0;
+            }
+            int  n = tickets.length;
+            int [] remaining = new int [n];
+
+            for(int i = 0; i<n ; i++){
+                remaining[i] = tickets[i];
+            }
+
+            int [] line = new int [n];
+            int front = 0; 
+            int rear = 0;
+            int size = 0;
+
+            for(int i = 0; i<n i ++){
+                line [rear] = i;
+                rear = rear+1%n;
+                size++;
+            }
+            int time = 0;
+
+            while(size>0){
+                int person = line[front];
+                front = front + 1 % n;
+                size--;
+                time ++;
+                remaining[person]--;
+            }
+            if(person == k && remaining[person] ==0){
+                return time;
+            }
+
             throw new UnsupportedOperationException("Implement timeRequiredToBuy(int[], int) first!");
         }
     }
