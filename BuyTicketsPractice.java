@@ -2,7 +2,7 @@ import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Queue;
 
-public class BuyTicketsPractice {
+public class BuyTicketsPractice {                                          //2073
 
     /**
      * Your class to complete for LeetCode 2073: Time Needed to Buy Tickets.
